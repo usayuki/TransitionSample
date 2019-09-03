@@ -15,7 +15,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat" />
+        app:srcCompat="@drawable/cat"
+        android:transitionName="transition" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -25,5 +26,6 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView1"
-        app:srcCompat="@drawable/tarot" />
+        app:srcCompat="@drawable/tarot"
+        android:transitionName="transition" />
 </androidx.constraintlayout.widget.ConstraintLayout>
