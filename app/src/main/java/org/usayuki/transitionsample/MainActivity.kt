@@ -4,6 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.app.ActivityOptions
+import android.util.Pair
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,20 +15,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val imageView1 = findViewById(R.id.imageView1) as ImageView
-        imageView1.setOnClickListener {
+        val imageView = findViewById(R.id.imageView) as ImageView
+        imageView.setOnClickListener {
             nextView(R.drawable.cat)
-        }
-
-        val imageView2 = findViewById(R.id.imageView2) as ImageView
-        imageView2.setOnClickListener {
-            nextView(R.drawable.tarot)
         }
     }
 
     private fun nextView(image: Int) {
         val intent = Intent(this, PreviewActivity::class.java)
         intent.putExtra("image", image)
-        startActivity(intent)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView as View, "cover"), Pair.create(imageView as View, "base"))
+        startActivity(intent, options.toBundle())
     }
 }
