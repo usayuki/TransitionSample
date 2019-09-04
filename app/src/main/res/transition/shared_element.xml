@@ -5,7 +5,7 @@
     android:transitionOrdering="together"
     android:duration="240">
 
-    <transitionSet   >
+    <transitionSet>
         <transition
             class="org.usayuki.transitionsample.Transition.CustomTransition"/>
         <targets>

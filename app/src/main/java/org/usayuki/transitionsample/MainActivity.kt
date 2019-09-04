@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.app.ActivityOptions
 import android.util.Pair
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private fun nextView(image: Int) {
         val intent = Intent(this, PreviewActivity::class.java)
         intent.putExtra("image", image)
-        val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView as View, "cover"), Pair.create(imageView as View, "base"))
+        val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView, "image"))
         startActivity(intent, options.toBundle())
     }
 }

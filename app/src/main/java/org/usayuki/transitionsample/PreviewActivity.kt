@@ -17,7 +17,7 @@ class PreviewActivity : AppCompatActivity() {
 
         val backButton = findViewById(R.id.button) as Button
         backButton.setOnClickListener {
-            finish()
+            finishAfterTransition()
         }
     }
 }
