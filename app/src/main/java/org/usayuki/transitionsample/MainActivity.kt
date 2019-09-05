@@ -16,14 +16,18 @@ class MainActivity : AppCompatActivity() {
 
         val imageView = findViewById(R.id.imageView) as ImageView
         imageView.setOnClickListener {
-            nextView(R.drawable.cat)
+            val intent = Intent(this, PreviewActivity::class.java)
+            intent.putExtra("image", R.drawable.cat)
+            val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView, "image"))
+            startActivity(intent, options.toBundle())
         }
-    }
 
-    private fun nextView(image: Int) {
-        val intent = Intent(this, PreviewActivity::class.java)
-        intent.putExtra("image", image)
-        val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView, "image"))
-        startActivity(intent, options.toBundle())
+        val imageView2 = findViewById(R.id.imageView2) as ImageView
+        imageView2.setOnClickListener {
+            val intent = Intent(this, PreviewActivity::class.java)
+            intent.putExtra("image", R.drawable.tarot)
+            val options = ActivityOptions.makeSceneTransitionAnimation(this, Pair.create(imageView2, "image"))
+            startActivity(intent, options.toBundle())
+        }
     }
 }

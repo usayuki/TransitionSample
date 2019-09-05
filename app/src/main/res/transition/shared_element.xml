@@ -10,6 +10,7 @@
             class="org.usayuki.transitionsample.Transition.CustomTransition"/>
         <targets>
             <target android:excludeId="@id/imageView" />
+            <target android:excludeId="@id/imageView2" />
         </targets>
     </transitionSet>
 
