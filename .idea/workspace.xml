@@ -6,13 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e564a9c5-0b0c-4ab1-92fd-e59c9df046b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/usayuki/transitionsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/usayuki/transitionsample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/transition/shared_element.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/transition/shared_element.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transitionSample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/transitionSample.iml" afterDir="false" />
-    </list>
+    <list default="true" id="e564a9c5-0b0c-4ab1-92fd-e59c9df046b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
